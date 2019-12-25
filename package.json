@@ -4,6 +4,7 @@
   "description": "A collation of react hooks I use and write regularly",
   "main": "src/index.ts",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Wayne Van Son",
   "license": "MIT",
   "private": false,
