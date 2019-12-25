@@ -1,6 +1,6 @@
 {
   "name": "@waynevs/hooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collation of react hooks I use and write regularly",
   "main": "src/index.ts",
   "module": "dist/index.js",
