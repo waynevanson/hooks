@@ -1,6 +1,6 @@
 {
   "name": "@waynevs/hooks",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A collation of react hooks I use and write regularly",
   "main": "src/index.ts",
   "author": "Wayne Van Son",
@@ -8,9 +8,11 @@
   "private": false,
   "repository": "git@github.com:waynevanson/hooks.git",
   "scripts": {
-    "build":"tsc"
+    "build": "tsc"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "@types/node": "^13.1.0",
