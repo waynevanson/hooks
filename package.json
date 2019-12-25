@@ -1,6 +1,6 @@
 {
   "name": "@waynevs/hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A collation of react hooks I use and write regularly",
   "main": "src/index.ts",
   "module": "dist/index.js",
@@ -10,7 +10,8 @@
   "private": false,
   "repository": "git@github.com:waynevanson/hooks.git",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
   },
   "files": [
     "dist"
