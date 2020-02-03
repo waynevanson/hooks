@@ -45,6 +45,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+import { useSelector, useDispatch } from "react-redux";
 /** Generates Redux middleware using the async API.  */
 export function generateMiddleware(middleware) {
     var _this = this;
@@ -61,5 +62,12 @@ export function generateMiddleware(middleware) {
             }
         });
     }); }; }; };
+}
+// custom hooks
+export function createUseRootSelector() {
+    return function (selector, equalityFn) { return useSelector(selector, equalityFn); };
+}
+export function createUseRootDispatch() {
+    return function () { return useDispatch(); };
 }
 //# sourceMappingURL=redux.js.map
