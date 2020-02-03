@@ -1,6 +1,6 @@
 {
   "name": "@waynevs/hooks",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A collation of react hooks I use and write regularly",
   "main": "src/index.ts",
   "module": "dist/index.js",
@@ -24,14 +24,14 @@
     "@types/react-dom": "^16.9.5",
     "@types/react-redux": "^7.1.7",
     "jest": "^24.9.0",
+    "redux": "^4.0.5",
     "ts-jest": "^24.2.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "redux": "^4.0.5"
+    "react-dom": "^16.12.0"
   },
   "dependencies": {
     "redux": "^4.0.5"
