@@ -1,12 +1,12 @@
 import { Action, Dispatch } from "redux";
-// MIDDLEWARE FACTORY
+import { useSelector, useDispatch } from "react-redux";
 
 export interface APIMiddleware<S extends {}, A extends Action> {
   getState: () => S;
   dispatch: Dispatch<A>;
 }
 
-/** Parameters for the Async function. */
+/** Parameters for the async function. */
 export type AsyncParams<S extends {}, A extends Action> = APIMiddleware<
   S,
   A
@@ -30,4 +30,17 @@ export function generateMiddleware<S extends {}, A extends Action>(
     await middleware({ action, ...params });
     return result;
   };
+}
+
+// custom hooks
+
+export function createUseRootSelector<S extends {}>() {
+  return <U = unknown>(
+    selector: (state: S) => U,
+    equalityFn?: (left: U, right: U) => boolean
+  ) => useSelector(selector, equalityFn);
+}
+
+export function createUseRootDispatch<A extends Action>() {
+  return () => useDispatch<Dispatch<A>>();
 }

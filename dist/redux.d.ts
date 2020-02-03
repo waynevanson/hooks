@@ -3,7 +3,7 @@ export interface APIMiddleware<S extends {}, A extends Action> {
     getState: () => S;
     dispatch: Dispatch<A>;
 }
-/** Parameters for the Async function. */
+/** Parameters for the async function. */
 export declare type AsyncParams<S extends {}, A extends Action> = APIMiddleware<S, A> & {
     action: A;
 };
