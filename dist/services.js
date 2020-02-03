@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
 /**
- * Creates a service. Saves reqriting the same hooks over and over.
+ * Creates a service. Saves rewriting the same hooks over and over.
  * @param useValue The value for your global state
  * @param defaultValue the default value. You can make this whatever you like, but it defaults to null and throws.
  * @returns `[use[Service], [Service]provider, [service]Context]`, where `[service]` is the name of your service.
